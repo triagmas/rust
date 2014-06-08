@@ -7,7 +7,8 @@
 		"laravel/framework": "4.2.*",
 		"cartalyst/sentry": "2.1.*",
 		"patricktalmadge/bootstrapper": "dev-develop",
-		"barryvdh/laravel-debugbar": "1.*"
+		"barryvdh/laravel-debugbar": "1.*",
+		"codesleeve/asset-pipeline": "dev-master"
 	},
 	"autoload": {
 		"classmap": [

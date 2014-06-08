@@ -124,7 +124,7 @@ return array(
 		'Cartalyst\Sentry\SentryServiceProvider',
 		'Bootstrapper\BootstrapperServiceProvider',
 		'Barryvdh\Debugbar\ServiceProvider',
-
+		'Codesleeve\AssetPipeline\AssetPipelineServiceProvider',
 	),
 
 	/*
