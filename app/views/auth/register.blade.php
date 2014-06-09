@@ -35,8 +35,16 @@
                                     {{ Form::text('email', '', array('class' => 'form-control', 'placeholder' => 'E-mail', 'autofocus' => 'autofocus')) }}
                                 </div>
                                 <div class="form-group">
+                                    {{ Form::label('email_confirm', 'Подтвердите E-mail')}}
+                                    {{ Form::text('email_confirm', '', array('class' => 'form-control', 'placeholder' => 'E-mail', 'autofocus' => 'autofocus')) }}
+                                </div>
+                                <div class="form-group">
                                     {{ Form::label('password', 'Пароль')}}
                                     {{ Form::password('password', '', array('class' => 'form-control', 'placeholder' => 'Пароль', 'autofocus' => 'autofocus')) }} 
+                                </div>
+                                <div class="form-group">
+                                    {{ Form::label('password_confirm', 'Подтвердите пароль')}}
+                                    {{ Form::password('password_confirm', '', array('class' => 'form-control', 'placeholder' => 'Пароль', 'autofocus' => 'autofocus')) }} 
                                 </div>
                                 	{{ Form::submit('Зарегистрироваться', array('class' => 'btn btn-success')) }}
                                     {{ HTML::link('/', 'Отмена', array('class' => 'btn btn-danger'))}}
