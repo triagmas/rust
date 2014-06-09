@@ -6,9 +6,13 @@
 	"require": {
 		"laravel/framework": "4.2.*",
 		"cartalyst/sentry": "2.1.*",
+		"way/generators": "2.*",
 		"patricktalmadge/bootstrapper": "dev-develop",
 		"barryvdh/laravel-debugbar": "1.*",
-		"codesleeve/asset-pipeline": "dev-master"
+		"slushie/laravel-assetic": "dev-master",
+   		"lmammino/jsmin4assetic": "1.0.0",
+   		"leafo/lessphp": "0.4.0",
+   		"natxet/CssMin": "dev-master"
 	},
 	"autoload": {
 		"classmap": [

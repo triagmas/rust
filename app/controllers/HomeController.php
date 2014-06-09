@@ -20,4 +20,24 @@ class HomeController extends BaseController {
 		return View::make('hello');
 	}
 
+	public function getRegister()
+	{
+
+	}
+
+	public function getLogin()
+	{
+
+	}
+
+	public function postRegister()
+	{
+
+	}
+
+	public function postLogin()
+	{
+
+	}
+	
 }
