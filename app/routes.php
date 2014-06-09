@@ -15,3 +15,15 @@ Route::get('/', function()
 {
 	return View::make('base');
 });
+
+Route::get('register', 'HomeController@getRegister');
+Route::get('login', array('as' => 'login', 'uses' => 'HomeController@getLogin'));
+
+Route::post('register', 'HomeController@postRegister');
+Route::post('login', 'HomeController@postLogin');
+
+Route::group(array('before' => 'auth'), function() 
+{
+	Route::get('admin', 'AdminController@index');
+	Route::get('logout', 'HomeController@getLogout');
+});

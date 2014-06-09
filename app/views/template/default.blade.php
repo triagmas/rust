@@ -11,7 +11,7 @@
     {{ Bootstrapper\Helpers::get_CSS() }}
 
     <!-- Core CSS - Include with every page -->
-    <script src="{{ Asset::url('singlecss-main') }}"></script> 
+    {{ HTML::style(Asset::url('singlecss-main')) }} 
 
 </head>
 
@@ -20,13 +20,14 @@
     <div class="container">
          @yield('container') 
     </div>
- TEST
+
     <!-- Core Scripts - Include with every page -->
     {{ Bootstrapper\Helpers::get_JS() }}
 
     <!-- Core Scripts - Include with every page -->
-    <script src="{{ Asset::url('singlejs-main') }}"></script>
+    {{ HTML::script(Asset::url('singlejs-main')) }}
 
 </body>
 
 </html>
+

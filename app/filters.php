@@ -33,6 +33,7 @@ App::after(function($request, $response)
 |
 */
 
+/*
 Route::filter('auth', function()
 {
 	if (Auth::guest())
@@ -44,6 +45,22 @@ Route::filter('auth', function()
 		else
 		{
 			return Redirect::guest('login');
+		}
+	}
+});
+*/
+
+Route::filter('auth', function()
+{
+	if (!Sentry::check())
+	{
+		if (Request::ajax())
+		{
+			return Response::make('Unauthorized', 401);
+		}
+		else
+		{
+			return Redirect::route('login');
 		}
 	}
 });

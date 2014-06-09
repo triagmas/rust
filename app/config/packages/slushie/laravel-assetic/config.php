@@ -64,6 +64,7 @@ return array(
       // named assets defined below
       'assets' => array(
         'assets/font-awesome/css/font-awesome.min.css',
+        'assets/stylesheet/*css',
         'assets/stylesheet/plugins/dataTables/*css',
         'assets/stylesheet/plugins/morris/*css',
         'assets/stylesheet/plugins/social-buttons/*css',
