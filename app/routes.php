@@ -27,3 +27,9 @@ Route::group(array('before' => 'auth'), function()
 	Route::get('admin', 'AdminController@index');
 	Route::get('logout', 'AuthController@getLogout');
 });
+
+// 404 Page
+App::missing(function($exception)
+{
+    return Response::view('site::404', array(), 404);
+});
