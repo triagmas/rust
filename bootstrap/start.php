@@ -26,7 +26,8 @@ $app = new Illuminate\Foundation\Application;
 
 $env = $app->detectEnvironment(array(
 
-	'local' => array('DPC'),
+	'local_work' => array('DPC'),
+	'local_home' => array('iMac-admin.local'),
 
 ));
 

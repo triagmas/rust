@@ -1,5 +1,10 @@
 @extends('template.default')
 
+
+@section('title')
+    Регистрация
+@stop
+
 @section('container')
 
         <div class="row">
@@ -9,7 +14,7 @@
                         <h3 class="panel-title">Регистрация</h3>
                     </div>
                     <div class="panel-body">
-                        {{ Form::open(array('url' => 'login')) }}
+                        {{ Form::open(array('url' => 'register')) }}
                         @if($errors->any())
                         	<div class="alert alert-danger alert-dismissable">
                                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
@@ -33,7 +38,7 @@
                                     {{ Form::label('password', 'Пароль')}}
                                     {{ Form::password('password', '', array('class' => 'form-control', 'placeholder' => 'Пароль', 'autofocus' => 'autofocus')) }} 
                                 </div>
-                                	{{ Form::submit('Заарегистрироваться', array('class' => 'btn btn-success')) }}
+                                	{{ Form::submit('Зарегистрироваться', array('class' => 'btn btn-success')) }}
                                     {{ HTML::link('/', 'Отмена', array('class' => 'btn btn-danger'))}}
                             </fieldset>
                         {{ Form::close() }}

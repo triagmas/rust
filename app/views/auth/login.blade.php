@@ -1,5 +1,9 @@
 @extends('template.default')
 
+@section('title')
+    Войти
+@stop
+
 @section('container')
 
         <div class="row">
@@ -27,7 +31,7 @@
                                 	{{ Form::label('remember', 'Помни меня') }}
                                     {{ Form::checkbox('remeber', 'Помни меня')}}    
                                 </div>
-                                	{{ Form::submit('Login', array('class' => 'btn btn-lg btn-success btn-block')) }}
+                                	{{ Form::submit('Войти', array('class' => 'btn btn-lg btn-success btn-block')) }}
                             </fieldset>
                         {{ Form::close() }}
                     </div>
