@@ -36,12 +36,12 @@ return array(
 
       // named assets defined below
       'assets' => array(
+        'assets/javascript/plugins/metisMenu/*js',
+       // 'assets/javascript/plugins/dataTables/*js',
+       // 'assets/javascript/plugins/flot/*js',
+       // 'assets/javascript/plugins/morris/*js',
+       // 'assets/javascript/demo/*js',
         'assets/javascript/*js',
-        'assets/javascript/demo/*js',
-        'assets/javascript/plugins/metrisMenu/*js',
-        'assets/javascript/plugins/dataTables/*js',
-        'assets/javascript/plugins/flot/*js',
-        'assets/javascript/plugins/morris/*js',
         // its also possible to include assets here directly
         // eg, public_path('jquery-ui.js')
       ),
@@ -57,18 +57,18 @@ return array(
       // you define multiple filters in array
       'filters' => array(
         'css_import',
-        'css_rewrit',
-        'css_min'
+        'css_rewrit'
+        //'css_min'
       ),
 
       // named assets defined below
       'assets' => array(
-        'assets/font-awesome/css/font-awesome.min.css',
-        'assets/stylesheet/*css',
-        'assets/stylesheet/plugins/dataTables/*css',
-        'assets/stylesheet/plugins/morris/*css',
-        'assets/stylesheet/plugins/social-buttons/*css',
-        'assets/stylesheet/plugins/timeline/*css',        
+        //'assets/font-awesome/css/font-awesome.min.css',
+        'assets/stylesheet/sb-admin.css',
+        //'assets/stylesheet/plugins/dataTables/*css',
+        //'assets/stylesheet/plugins/morris/*css',
+        //'assets/stylesheet/plugins/social-buttons/*css',
+        //'assets/stylesheet/plugins/timeline/*css',        
         //'assets/stylesheet/frontend/bootstrap/css/bootstrap.min.css'
 
         // its also possible to include assets here directly

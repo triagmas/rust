@@ -1,4 +1,12 @@
-@extends('template.default')
+@extends('template.admin')
+
+@section('title')
+    Администрирование
+@stop
+
+@section('page_name')
+    Рабочий стол
+@stop
 
 @section('container')
 

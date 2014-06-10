@@ -16,7 +16,15 @@ class AuthController extends BaseController {
 	*/
 	public function getRegister()
 	{
-		return View::make('auth.register');
+		if (Sentry::check())
+		{
+		    return Redirect::to('admin');
+		}
+		else
+		{
+		    return View::make('auth.register');
+		}
+
 	}
 
 	public function getLogin()
@@ -33,7 +41,6 @@ class AuthController extends BaseController {
 			'first_name'       => 'required|min:3',
 			'last_name'        => 'required|min:3',
 			'email'            => 'required|email|unique:users',
-			'email_confirm'    => 'required|email|same:email',
 			'password'         => 'required|between:3,32',
 			'password_confirm' => 'required|same:password',
 		);

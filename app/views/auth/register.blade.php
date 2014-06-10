@@ -1,4 +1,4 @@
-@extends('template.default')
+@extends('template.auth')
 
 
 @section('title')
@@ -33,10 +33,6 @@
                                 <div class="form-group">
                                     {{ Form::label('email', 'E-mail')}}
                                     {{ Form::text('email', '', array('class' => 'form-control', 'placeholder' => 'E-mail', 'autofocus' => 'autofocus')) }}
-                                </div>
-                                <div class="form-group">
-                                    {{ Form::label('email_confirm', 'Подтвердите E-mail')}}
-                                    {{ Form::text('email_confirm', '', array('class' => 'form-control', 'placeholder' => 'E-mail', 'autofocus' => 'autofocus')) }}
                                 </div>
                                 <div class="form-group">
                                     {{ Form::label('password', 'Пароль')}}

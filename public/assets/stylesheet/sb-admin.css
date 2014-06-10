@@ -1,21 +1,13 @@
-/* Global Styles */
-
-/* ------------------------------- */
-
 body {
     padding-top: 100px;
     background-color: #f8f8f8;
 }
 
-@media(min-width:768px) {
+@media (min-width:768px) {
     body {
         padding-top: 50px;
     }
 }
-
-/* Wrappers */
-
-/* ------------------------------- */
 
 #wrapper {
     width: 100%;
@@ -27,7 +19,7 @@ body {
     background-color: #fff;
 }
 
-@media(min-width:768px) {
+@media (min-width:768px) {
     #page-wrapper {
         position: inherit;
         margin: 0 0 0 250px;
@@ -36,12 +28,6 @@ body {
         border-left: 1px solid #e7e7e7;
     }
 }
-
-/* Navigation */
-
-/* ------------------------------- */
-
-/* Top Right Navigation Dropdown Styles */
 
 .navbar-top-links li {
     display: inline-block;
@@ -96,8 +82,6 @@ body {
     right: 0;
     left: auto;
 }
-
-/* Sidebar Menu Styles */
 
 .navbar-static-side ul li {
     border-bottom: 1px solid #e7e7e7;
@@ -161,10 +145,6 @@ body {
     }
 }
 
-/* Buttons */
-
-/* ------------------------------- */
-
 .btn-outline {
     color: inherit;
     background-color: transparent;
@@ -198,12 +178,6 @@ body {
 .btn-danger.btn-outline:hover {
     color: #fff;
 }
-
-/* Pages */
-
-/* ------------------------------- */
-
-/* Dashboard Chat */
 
 .chat {
     margin: 0;
@@ -240,13 +214,10 @@ body {
     overflow-y: scroll;
 }
 
-/* Login Page */
-
 .login-panel {
     margin-top: 25%;
 }
 
-/* Flot Chart Containers */
 
 .flot-chart {
     display: block;
@@ -257,8 +228,6 @@ body {
     width: 100%;
     height: 100%;
 }
-
-/* DataTables Overrides */
 
 table.dataTable thead .sorting,
 table.dataTable thead .sorting_asc,
@@ -286,8 +255,6 @@ table.dataTable thead .sorting:after {
     font-family: fontawesome;
     color: rgba(50,50,50,.5);
 }
-
-/* Circle Buttons */
 
 .btn-circle {
     width: 30px;

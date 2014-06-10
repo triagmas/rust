@@ -15,4 +15,4 @@ $(function() {
             $('div.sidebar-collapse').removeClass('collapse')
         }
     })
-})
+});

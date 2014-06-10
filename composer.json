@@ -12,7 +12,7 @@
 		"slushie/laravel-assetic": "dev-master",
    		"lmammino/jsmin4assetic": "1.0.0",
    		"leafo/lessphp": "0.4.0",
-   		"natxet/CssMin": "dev-master"
+   		"cssmin/cssmin": "*"
 	},
 	"autoload": {
 		"classmap": [

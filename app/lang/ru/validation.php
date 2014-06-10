@@ -84,12 +84,13 @@ return array(
 
 	'custom' => array(
 		'email_confirm' => array(
+			'email' => 'Пожалуйста введите правильный E-mail',
 			'required' => 'Поле подтверждения E-mail обязательно для заполнения',
 		),
 		'email' => array(
 			'email' => 'Пожалуйста введите правильный E-mail',
 			'required' => 'Поле E-mail обязательно для заполнения',
-		),
+		),		
 	),
 
 	/*

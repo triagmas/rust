@@ -24,7 +24,7 @@ Route::post('login', 'AuthController@postLogin');
 
 Route::group(array('before' => 'auth'), function() 
 {
-	Route::get('admin', 'AdminController@index');
+	Route::get('admin', array('as' => 'admin', 'uses' => 'AdminController@index'));
 	Route::get('logout', 'AuthController@getLogout');
 });
 
