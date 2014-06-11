@@ -116,7 +116,7 @@ body {
     padding-left: 52px;
 }
 
-@media(min-width:768px) {
+@media (min-width:768px) {
     .navbar-static-side {
         z-index: 1;
         position: absolute;
@@ -131,14 +131,14 @@ body {
     }
 }
 
-@media(max-height:600px) and (max-width:767px) {
+@media (max-height:600px) and (max-width:767px) {
     .sidebar-collapse {
         max-height: 300px;
         overflow-y: scroll;
     }
 }
 
-@media(max-height:400px) and (max-width:767px) {
+@media (max-height:400px) and (max-width:767px) {
     .sidebar-collapse {
         max-height: 200px;
         overflow-y: scroll;

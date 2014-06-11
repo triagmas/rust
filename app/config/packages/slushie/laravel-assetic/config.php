@@ -57,8 +57,8 @@ return array(
       // you define multiple filters in array
       'filters' => array(
         'css_import',
-        'css_rewrit'
-        //'css_min'
+        'css_rewrit',
+        'css_min'
       ),
 
       // named assets defined below
