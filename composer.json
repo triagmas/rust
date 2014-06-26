@@ -17,6 +17,7 @@
 	"require": {
 		"laravel/framework": "4.2.*",
 		"cartalyst/sentry": "2.1.*",
+        "barryvdh/laravel-ide-helper": "1.*",
 		"way/generators": "2.*",
 		"patricktalmadge/bootstrapper": "dev-develop",
 		"barryvdh/laravel-debugbar": "1.*",
@@ -24,7 +25,7 @@
    		"lmammino/jsmin4assetic": "1.0.0",
    		"leafo/lessphp": "0.4.0",
    		"cssmin/cssmin": "*"
-	},
+	},	
 	"autoload": {
 		"classmap": [
 			"app/commands",

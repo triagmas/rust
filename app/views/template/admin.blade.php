@@ -268,7 +268,7 @@
                             <a href="#"><i class="fa fa-user fa-fw"></i> Пользователи<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="/admin/users/">Пользователи</a>
+                                    <a href="{{ URL::to('admin/users/') }}">Пользователи</a>
                                 </li>
                                 <li>
                                     <a href="/admin/users/group/">Группы</a>
@@ -364,7 +364,17 @@
             </div>
             <!-- /.row -->
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-12">
+                @if($errors->any())
+                            <div class="alert alert-danger alert-dismissable">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                {{ implode('', $errors->all('<li class="error">:message</li>')) }}
+                            </div>
+                        @endif
+                    </div>
+                </div>        
+            <div class="row">
+                <div class="col-lg-12">
                     @yield('container') 
                 </div>
             </div>
@@ -379,6 +389,8 @@
 
     <!-- Core Scripts - Include with every page -->
     {{ HTML::script(Asset::url('singlejs-main')) }}
+
+
 
 </body>
 

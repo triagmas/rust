@@ -1,6 +1,13 @@
 <?php
 
-class AdminController extends \BaseController {
+class AdminController extends BaseController {
+
+	// Применяем авторизацию перед каждым вызовом
+	public function __construct()
+	{
+		// Apply the admin auth filter
+		$this->beforeFilter('admin-auth');
+	}
 
 	/**
 	 * Display a listing of the resource.

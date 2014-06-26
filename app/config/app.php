@@ -126,6 +126,7 @@ return array(
 		'Barryvdh\Debugbar\ServiceProvider',
 		'Slushie\LaravelAssetic\LaravelAsseticServiceProvider',
 		'Way\Generators\GeneratorsServiceProvider',
+		'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
 	),
 
 	/*

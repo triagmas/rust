@@ -32,3 +32,19 @@ App::missing(function($exception)
 {
     return Response::view('common.errors', array(), 404);
 });
+
+//Раздел администрирования
+Route::group(array('prefix' => 'admin'), function()
+	{
+		//Администрирование пользователей
+		Route::group(array('prefix' => 'users'), function()
+			{
+				Route::get('/', array('as' => 'users', 'uses' => 'App\Controllers\Admin\UsersController@getIndex'));
+				Route::get('create', array('as' => 'create/user', 'uses' => 'App\Controllers\Admin\UsersController@getCreate'));
+				Route::post('create', 'App\Controllers\Admin\UsersController@postCreate');
+				Route::get('{userId}/edit', array('as' => 'update/user', 'uses' => 'App\Controllers\Admin\UsersController@getEdit'));
+				Route::post('{userId}/edit', 'App\Controllers\Admin\UsersController@postEdit');
+				Route::get('{userId}/delete', array('as' => 'delete/user', 'uses' => 'App\Controllers\Admin\UsersController@getDelete'));
+				//Route::get('{userId}/restore', array('as' => 'restore/user', 'uses' => 'App\Controllers\Admin\UsersController@getRestore'));
+			});
+	});

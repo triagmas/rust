@@ -1,3 +1,4 @@
+
 $(function() {
 
     $('#side-menu').metisMenu();
@@ -16,3 +17,9 @@ $(function() {
         }
     })
 });
+
+        $(function() {
+
+            $('[data-toggle="confirmation"]').confirmation();
+
+        });
